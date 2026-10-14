@@ -1,9 +1,59 @@
 <!DOCTYPE html>
-<html
+<html lang="en">
 <head>
-  <title>My website</title>
+  <meta charset="UTF-8">
+  <title>Futures for Beginners - Home</title>
+  <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-  <h1>Hello world!</h1>
+  <header>
+    <h1 class="logo">Futures for Beginners</h1>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="aboutus.html">About Futures</a>
+      <a href="accessibility.html">Accessibility</a>
+      <a href="contactus.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <h2>Start Learning Futures Trading</h2>
+        <p>This site explains futures trading in simple language, so beginners can understand the basics without feeling overwhelmed.</p>
+        <button onclick="document.getElementById('intro').scrollIntoView({behavior:'smooth'})">
+          Start Here
+        </button>
+      </div>
+      <div class="hero-img">
+        <img src="images/hero.jpg" alt="Beginner looking at a futures chart">
+      </div>
+    </section>
+
+    <section id="intro" class="content-section">
+      <h2>What Is Futures Trading?</h2>
+      <p>Futures trading is buying and selling contracts that agree on a price today for something that will be delivered or settled in the future. Beginners use futures to learn how markets move and how risk works.</p>
+    </section>
+
+    <section class="cards">
+      <article class="card">
+        <h3>Simple Explanations</h3>
+        <p>We break down futures concepts into short, easy‑to‑read sections so you can learn step by step.</p>
+      </article>
+      <article class="card">
+        <h3>Beginner‑Friendly Topics</h3>
+        <p>Learn about margin, leverage, contracts, and risk using examples instead of complex math.</p>
+      </article>
+      <article class="card">
+        <h3>Next Steps</h3>
+        <p>Use our About and Contact pages to keep learning and ask questions as you grow.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Futures for Beginners</p>
+  </footer>
 </body>
 </html>
+
